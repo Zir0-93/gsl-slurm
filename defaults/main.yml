@@ -52,7 +52,7 @@ __slurm_config_default:
   ReturnToService: 2
   DefMemPerCPU: 1024
   JobAcctGatherType: "jobacct_gather/linux"
-  PreemptMode: "SUSPEND,GANG"
+  PreemptMode: "CANCEL"
   PreemptType: "preempt/qos"
   SlurmctldPort: 6817
   SlurmctldLogFile: "{{ '/var/log/slurm-llnl/slurmctld.log' if __slurm_debian else omit }}"
