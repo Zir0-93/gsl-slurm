@@ -48,6 +48,7 @@ __slurm_config_default:
   AccountingStorageType: "accounting_storage/slurmdbd"
   AccountingStorageEnforce: "associations,limits,qos"
   AccountingStorageHost: "{{ groups['slurmdbdservers'][0] }}"
+  PriorityWeightQOS: 100000
   ReturnToService: 2
   DefMemPerCPU: 1024
   JobAcctGatherType: "jobacct_gather/linux"
